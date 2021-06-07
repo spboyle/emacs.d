@@ -31,11 +31,11 @@
 (use-package haml-mode)
 (use-package rspec-mode)
 (use-package typescript-mode)
-(use-package ivy)
 (use-package yaml-mode)
 (use-package foreman-mode)
 (use-package vue-mode)
 
+(require 'init-ivy)
 (require 'init-org)
 (require 'init-folding)
 (require 'init-deadgrep)
@@ -58,7 +58,11 @@
 (setq-default save-interprogram-paste-before-kill t)
 (setq-default yank-pop-change-selection t)
 
-;; better defaults pulled out the ones I Like
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Better defaults below
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; better-defaults pulled out the ones I Like
 (unless (eq window-system 'ns)
   (menu-bar-mode -1))
 (when (fboundp 'tool-bar-mode)
@@ -83,7 +87,6 @@
  ;; load-prefer-newer t
  ;; ediff-window-setup-function 'ediff-setup-windows-plain)
  require-final-newline t)
-
 
 (unless backup-directory-alist
   (setq backup-directory-alist `(("." . ,(concat user-emacs-directory
