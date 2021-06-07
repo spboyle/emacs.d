@@ -13,4 +13,5 @@
              (define-key org-mode-map (kbd "H-p") 'mc/mark-previous-like-this)
              (define-key org-mode-map (kbd "H-M-y") 'mc/mark-all-like-this)))
 
+(provide 'init-multiple-cursors)
 ;;; init-multiple-cursors.el ends here

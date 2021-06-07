@@ -35,12 +35,16 @@
 (use-package foreman-mode)
 (use-package vue-mode)
 
+(require 'init-multiple-cursors)
+(require 'init-windmove)
+(require 'init-projectile)
 (require 'init-ivy)
 (require 'init-org)
 (require 'init-folding)
 (require 'init-deadgrep)
 (require 'init-inf-ruby)
-(require 'init-projectile)
+(require 'init-fzf)
+
 
 ;; Personal Customization
 (setq mac-option-modifier 'meta)
