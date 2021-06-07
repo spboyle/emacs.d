@@ -28,12 +28,8 @@
               ("C-o" . magit-diff-visit-file-other-window)
               :map magit-hunk-section-map
               ("C-o" . magit-diff-visit-file-other-window)))
-(use-package deadgrep)
 (use-package haml-mode)
 (use-package rspec-mode)
-(use-package inf-ruby)
-;; (use-package better-defaults)
-(use-package projectile)
 (use-package typescript-mode)
 (use-package ivy)
 (use-package yaml-mode)
@@ -42,6 +38,9 @@
 
 (require 'init-org)
 (require 'init-folding)
+(require 'init-deadgrep)
+(require 'init-inf-ruby)
+(require 'init-projectile)
 
 ;; Personal Customization
 (setq mac-option-modifier 'meta)
@@ -49,23 +48,6 @@
 
 (server-start)
 (setq ruby-insert-encoding-magic-comment nil)
-
-
-;; Windmove
-;; (when (fboundp 'windmove-default-keybindings)
-;;   (windmove-default-keybindings))
-(global-set-key (kbd "H-a")  'windmove-left)
-(global-set-key (kbd "H-d") 'windmove-right)
-(global-set-key (kbd "H-w")    'windmove-up)
-(global-set-key (kbd "H-s")  'windmove-down)
-
-;; override org-mode bindings for multiple cursors & WindMove
-(add-hook 'org-mode-hook
-          '(lambda ()
-             (define-key org-mode-map (kbd "H-a")  'windmove-left)
-             (define-key org-mode-map (kbd "H-d") 'windmove-right)
-             (define-key org-mode-map (kbd "H-w")    'windmove-up)
-             (define-key org-mode-map (kbd "H-s")  'windmove-down)))
 
 ;; Whitespace clean-up
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
@@ -75,19 +57,6 @@
 ;; Clipboard integration
 (setq-default save-interprogram-paste-before-kill t)
 (setq-default yank-pop-change-selection t)
-
-;; deadgrep
-(global-set-key (kbd "H-r") #'deadgrep)
-
-
-;; inf-ruby rspec-mode integration
-(add-hook 'after-init-hook 'inf-ruby-switch-setup)
-(add-hook 'compilation-filter-hook 'inf-ruby-auto-enter)
-
-;; projectile mode
-(define-key projectile-mode-map (kbd "H-o") 'projectile-command-map)
-(global-set-key (kbd "H-x") 'projectile-run-async-shell-command-in-root)
-(projectile-mode +1)
 
 ;; better defaults pulled out the ones I Like
 (unless (eq window-system 'ns)
