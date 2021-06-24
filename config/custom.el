@@ -7,7 +7,8 @@
  '(css-indent-offset 2)
  '(inhibit-startup-screen t)
  '(js-indent-level 2)
- '(typescript-indent-level 2))
+ '(typescript-indent-level 2)
+ '(vue-html-color-interpolations t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

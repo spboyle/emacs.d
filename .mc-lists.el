@@ -3,8 +3,10 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        backward-sexp
         beginning-of-defun
         comment-dwim
+        counsel-yank-pop
         default-indent-new-line
         electric-newline-and-maybe-indent
         haml-electric-backspace

@@ -38,7 +38,8 @@
 (require 'init-multiple-cursors)
 (require 'init-windmove)
 (require 'init-projectile)
-(require 'init-ivy)
+;; (require 'init-ivy)
+(require 'init-helm)
 (require 'init-org)
 (require 'init-folding)
 (require 'init-deadgrep)
@@ -95,3 +96,6 @@
 (unless backup-directory-alist
   (setq backup-directory-alist `(("." . ,(concat user-emacs-directory
                                                  "backups")))))
+
+;; Disable ugly vue mode background
+(setq mmm-submode-decoration-level 0)
