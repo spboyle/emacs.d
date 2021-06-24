@@ -45,7 +45,7 @@
 (require 'init-deadgrep)
 (require 'init-inf-ruby)
 (require 'init-fzf)
-
+(require 'init-git-link)
 
 ;; Personal Customization
 (setq mac-option-modifier 'meta)
