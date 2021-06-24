@@ -7,6 +7,7 @@
  '(css-indent-offset 2)
  '(inhibit-startup-screen t)
  '(js-indent-level 2)
+ '(org-adapt-indentation t)
  '(typescript-indent-level 2)
  '(vue-html-color-interpolations t))
 (custom-set-faces
