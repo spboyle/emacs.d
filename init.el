@@ -51,7 +51,8 @@
 (setq mac-option-modifier 'meta)
 (setq mac-command-modifier 'hyper)
 
-(server-start)
+;; Use this for emacs-mac
+;; (server-start)
 (setq ruby-insert-encoding-magic-comment nil)
 
 ;; Whitespace clean-up
