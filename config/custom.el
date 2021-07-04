@@ -5,6 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
  '(css-indent-offset 2)
+ '(custom-enabled-themes '(wombat))
  '(inhibit-startup-screen t)
  '(js-indent-level 2)
  '(org-adapt-indentation t)

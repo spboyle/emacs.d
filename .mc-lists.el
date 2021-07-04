@@ -14,6 +14,7 @@
         kill-region
         org-delete-char
         org-self-insert-command
+        origami-recursively-toggle-node
         save-some-buffers
         transpose-words
         ))
