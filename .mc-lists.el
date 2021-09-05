@@ -12,12 +12,24 @@
         haml-electric-backspace
         indent-for-tab-command
         kill-region
+        org-beginning-of-line
+        org-cycle
         org-delete-char
+        org-end-of-line
+        org-force-self-insert
+        org-insert-link
+        org-kill-line
+        org-open-line
         org-self-insert-command
+        org-yank
+        origami-recursively-toggle-node
         save-some-buffers
         transpose-words
+        yaml-electric-backspace
+        yaml-electric-dash-and-dot
         ))
 
 (setq mc/cmds-to-run-once
       '(
+        mac-mwheel-scroll
         ))

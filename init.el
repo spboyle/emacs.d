@@ -34,6 +34,7 @@
 (use-package yaml-mode)
 (use-package foreman-mode)
 (use-package vue-mode)
+(use-package csv-mode)
 
 (require 'init-multiple-cursors)
 (require 'init-windmove)
@@ -77,6 +78,9 @@
 (when (fboundp 'horizontal-scroll-bar-mode)
   (horizontal-scroll-bar-mode -1))
 
+
+(global-set-key (kbd "H-=") 'text-scale-increase)
+(global-set-key (kbd "H--") 'text-scale-decrease)
 ;; (require 'uniquify)
 ;; (setq uniquify-buffer-name-style 'forward)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
