@@ -24,6 +24,7 @@
         org-yank
         origami-recursively-toggle-node
         save-some-buffers
+        tab-to-tab-stop
         transpose-words
         yaml-electric-backspace
         yaml-electric-dash-and-dot
@@ -32,4 +33,7 @@
 (setq mc/cmds-to-run-once
       '(
         mac-mwheel-scroll
+        counsel-projectile-find-file
+        describe-key
+        magit-section-forward-sibling
         ))

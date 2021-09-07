@@ -12,6 +12,7 @@
       (eval-print-last-sexp)))
   (load bootstrap-file nil 'nomessage))
 
+(global-unset-key (kbd "C-z"))
 ;; Use-package as syntax sugar for requiring packages
 (straight-use-package 'use-package)
 (setq straight-use-package-by-default t)
@@ -22,6 +23,11 @@
 
 ;; Set where custom inits come from
 (add-to-list 'load-path (expand-file-name "config" user-emacs-directory))
+
+;; TODO
+;; ivy-rich
+;; helpful
+;; peach-melpa
 
 (use-package magit
   :bind (:map magit-file-section-map
@@ -35,6 +41,14 @@
 (use-package foreman-mode)
 (use-package vue-mode)
 (use-package csv-mode)
+(use-package lua-mode)
+(use-package cl-lib)
+(use-package which-key
+  :init (which-key-mode)
+  ;; TOOD: SEAN:
+  ;; :diminish which-key-mode
+  :config
+  (setq which-key-idle-delay 0.3))
 
 (require 'init-multiple-cursors)
 (require 'init-windmove)
@@ -52,6 +66,7 @@
 (setq mac-option-modifier 'meta)
 (setq mac-command-modifier 'hyper)
 
+;; Use this for emacs-mac
 (server-start)
 (setq ruby-insert-encoding-magic-comment nil)
 
@@ -103,3 +118,29 @@
 
 ;; Disable ugly vue mode background
 (setq mmm-submode-decoration-level 0)
+
+
+;; Add usr-local-bin to where emacs looks for executables
+(setq exec-path (cons "/usr/local/bin" exec-path))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Hyper
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; These only seem to work with X11 emulation (GUI apps)
+;; emacsmac
+(setq mac-option-modifier 'meta)
+(setq mac-command-modifier 'hyper)
+(setq mac-function-modifier 'hyper)
+;; emacs-for-mac
+(setq ns-command-modifier 'hyper)
+(setq ns-function-modifier 'hyper)
+
+;; https://www.emacswiki.org/emacs/iTerm2
+;; Using iTerm2 to send escape sequences with key chords
+;; that emacs listens to from the list here.  Below is one example
+(progn
+  (let ((map (if (boundp 'input-decode-map)
+                 input-decode-map
+               function-key-map)))
+    (define-key map "\e[1;P9"  (kbd "H-a"))))
