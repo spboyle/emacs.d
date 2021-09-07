@@ -13,5 +13,10 @@
              (define-key org-mode-map (kbd "H-p") 'mc/mark-previous-like-this)
              (define-key org-mode-map (kbd "H-M-y") 'mc/mark-all-like-this)))
 
+;; TODO: SEAN: How to make <return> / RET just put in newlines
+(add-hook 'multiple-cursors-mode
+          '(lambda()
+             (global-set-key (kbd "RET") 'newline)))
+
 (provide 'init-multiple-cursors)
 ;;; init-multiple-cursors.el ends here

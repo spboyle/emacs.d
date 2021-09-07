@@ -12,6 +12,7 @@
       (eval-print-last-sexp)))
   (load bootstrap-file nil 'nomessage))
 
+(global-unset-key (kbd "C-z"))
 ;; Use-package as syntax sugar for requiring packages
 (straight-use-package 'use-package)
 (setq straight-use-package-by-default t)
@@ -22,6 +23,11 @@
 
 ;; Set where custom inits come from
 (add-to-list 'load-path (expand-file-name "config" user-emacs-directory))
+
+;; TODO
+;; ivy-rich
+;; helpful
+;; peach-melpa
 
 (use-package magit
   :bind (:map magit-file-section-map
@@ -36,12 +42,18 @@
 (use-package vue-mode)
 (use-package lua-mode)
 (use-package cl-lib)
+(use-package which-key
+  :init (which-key-mode)
+  ;; TOOD: SEAN:
+  ;; :diminish which-key-mode
+  :config
+  (setq which-key-idle-delay 0.3))
 
 (require 'init-multiple-cursors)
 (require 'init-windmove)
 (require 'init-projectile)
-;; (require 'init-ivy)
-(require 'init-helm)
+(require 'init-ivy)
+;; (require 'init-helm)
 (require 'init-org)
 (require 'init-folding)
 (require 'init-deadgrep)

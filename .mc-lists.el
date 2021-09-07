@@ -12,13 +12,21 @@
         haml-electric-backspace
         indent-for-tab-command
         kill-region
+        org-beginning-of-line
+        org-cycle
         org-delete-char
+        org-end-of-line
+        org-force-self-insert
         org-self-insert-command
         origami-recursively-toggle-node
         save-some-buffers
+        tab-to-tab-stop
         transpose-words
         ))
 
 (setq mc/cmds-to-run-once
       '(
+        counsel-projectile-find-file
+        describe-key
+        magit-section-forward-sibling
         ))
