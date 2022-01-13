@@ -21,6 +21,7 @@
         org-kill-line
         org-open-line
         org-self-insert-command
+        org-time-stamp
         org-yank
         origami-recursively-toggle-node
         save-some-buffers
@@ -32,8 +33,8 @@
 
 (setq mc/cmds-to-run-once
       '(
-        mac-mwheel-scroll
         counsel-projectile-find-file
         describe-key
+        mac-mwheel-scroll
         magit-section-forward-sibling
         ))
