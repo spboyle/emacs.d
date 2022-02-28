@@ -43,6 +43,7 @@
 (use-package csv-mode)
 (use-package lua-mode)
 (use-package cl-lib)
+(use-package dockerfile-mode)
 (use-package which-key
   :init (which-key-mode)
   ;; TOOD: SEAN:
@@ -144,3 +145,6 @@
                  input-decode-map
                function-key-map)))
     (define-key map "\e[1;P9"  (kbd "H-a"))))
+(put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
+(put 'scroll-left 'disabled nil)

@@ -7,11 +7,15 @@
         beginning-of-defun
         comment-dwim
         counsel-yank-pop
+        csv-backtab-command
+        csv-tab-command
         default-indent-new-line
         electric-newline-and-maybe-indent
         haml-electric-backspace
+        helm-M-x
         indent-for-tab-command
         kill-region
+        magit-fetch
         org-beginning-of-line
         org-cycle
         org-delete-char
@@ -21,9 +25,11 @@
         org-kill-line
         org-open-line
         org-self-insert-command
+        org-shifttab
         org-yank
         origami-recursively-toggle-node
         save-some-buffers
+        sgml-slash
         tab-to-tab-stop
         transpose-words
         yaml-electric-backspace
@@ -32,8 +38,10 @@
 
 (setq mc/cmds-to-run-once
       '(
-        mac-mwheel-scroll
         counsel-projectile-find-file
         describe-key
+        helm-confirm-and-exit-minibuffer
+        helm-projectile-find-file
+        mac-mwheel-scroll
         magit-section-forward-sibling
         ))

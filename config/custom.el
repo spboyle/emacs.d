@@ -9,6 +9,7 @@
    ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
  '(column-number-mode t)
  '(css-indent-offset 2)
+ '(custom-enabled-themes '(adwaita))
  '(inhibit-startup-screen t)
  '(js-indent-level 2)
  '(org-adapt-indentation t)

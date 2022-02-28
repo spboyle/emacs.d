@@ -2,6 +2,7 @@
 
 (use-package helm)
 (use-package helm-projectile)
+(use-package helm-rg)
 (helm-projectile-on)
 
 (helm-mode 1)
