@@ -9,12 +9,14 @@
    ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
  '(column-number-mode t)
  '(css-indent-offset 2)
- '(custom-enabled-themes '(adwaita))
+ '(custom-enabled-themes '(dichromacy))
  '(inhibit-startup-screen t)
  '(js-indent-level 2)
  '(org-adapt-indentation t)
  '(typescript-indent-level 2)
- '(vue-html-color-interpolations t))
+ '(vue-html-color-interpolations t)
+ '(web-mode-markup-indent-offset 2)
+ '(web-mode-tests-directory "/Users/seanboyle/.emacs.d/tests/"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

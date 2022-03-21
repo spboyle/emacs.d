@@ -62,6 +62,7 @@
 (require 'init-inf-ruby)
 (require 'init-fzf)
 (require 'init-git-link)
+(require 'init-web-mode)
 
 ;; Personal Customization
 (setq mac-option-modifier 'meta)
