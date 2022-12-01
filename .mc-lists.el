@@ -6,6 +6,7 @@
         backward-sexp
         beginning-of-defun
         comment-dwim
+        comment-line
         counsel-yank-pop
         csv-backtab-command
         csv-tab-command
@@ -16,6 +17,9 @@
         indent-for-tab-command
         kill-region
         magit-fetch
+        markdown-cycle
+        markdown-outdent-or-delete
+        markdown-shifttab
         org-beginning-of-line
         org-cycle
         org-delete-char
@@ -33,6 +37,7 @@
         tab-to-tab-stop
         transpose-words
         yaml-electric-backspace
+        yaml-electric-bar-and-angle
         yaml-electric-dash-and-dot
         ))
 
@@ -44,4 +49,5 @@
         helm-projectile-find-file
         mac-mwheel-scroll
         magit-section-forward-sibling
+        switch-to-buffer
         ))

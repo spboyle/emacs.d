@@ -34,6 +34,7 @@
               ("C-o" . magit-diff-visit-file-other-window)
               :map magit-hunk-section-map
               ("C-o" . magit-diff-visit-file-other-window)))
+(use-package elixir-mode)
 (use-package haml-mode)
 (use-package rspec-mode)
 (use-package typescript-mode)
@@ -50,6 +51,7 @@
   ;; :diminish which-key-mode
   :config
   (setq which-key-idle-delay 0.3))
+(use-package markdown-mode)
 
 (require 'init-multiple-cursors)
 (require 'init-windmove)
@@ -63,6 +65,8 @@
 (require 'init-fzf)
 (require 'init-git-link)
 (require 'init-web-mode)
+(require 'init-themes)
+
 
 ;; Personal Customization
 (setq mac-option-modifier 'meta)
