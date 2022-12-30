@@ -100,6 +100,9 @@
   (horizontal-scroll-bar-mode -1))
 
 
+;; Set Default font size
+;; (set-face-attribute 'default nil :height 160)
+
 (global-set-key (kbd "H-=") 'text-scale-increase)
 (global-set-key (kbd "H--") 'text-scale-decrease)
 ;; (require 'uniquify)

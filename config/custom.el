@@ -6,7 +6,7 @@
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
-   ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
+   ["#252525" "#ed4a46" "#70b433" "#dbb32d" "#368aeb" "#eb6eb7" "#3fc5b7" "#181818"])
  '(column-number-mode t)
  '(company-quickhelp-color-background "#4F4F4F")
  '(company-quickhelp-color-foreground "#DCDCCC")
@@ -16,7 +16,7 @@
  '(cua-normal-cursor-color "#8d9fa1")
  '(cua-overwrite-cursor-color "#c49619")
  '(cua-read-only-cursor-color "#93a61a")
- '(custom-enabled-themes '(tsdh-dark))
+ '(custom-enabled-themes '(solarized-selenized-black))
  '(custom-safe-themes
    '("4c56af497ddf0e30f65a7232a8ee21b3d62a8c332c6b268c81e9ea99b11da0d3" "3e200d49451ec4b8baa068c989e7fba2a97646091fd555eca0ee5a1386d56077" "f5b6be56c9de9fd8bdd42e0c05fecb002dedb8f48a5f00e769370e4517dde0e8" "efcecf09905ff85a7c80025551c657299a4d18c5fcfedd3b2f2b6287e4edd659" "57a29645c35ae5ce1660d5987d3da5869b048477a7801ce7ab57bfb25ce12d3e" "833ddce3314a4e28411edf3c6efde468f6f2616fc31e17a62587d6a9255f4633" "fee7287586b17efbfda432f05539b58e86e059e78006ce9237b8732fde991b4c" "00445e6f15d31e9afaa23ed0d765850e9cd5e929be5e8e63b114a3346236c44c" "285d1bf306091644fb49993341e0ad8bafe57130d9981b680c1dbd974475c5c7" "51ec7bfa54adf5fff5d466248ea6431097f5a18224788d0bd7eb1257a4f7b773" "830877f4aab227556548dc0a28bf395d0abe0e3a0ab95455731c9ea5ab5fe4e1" "7f1d414afda803f3244c6fb4c2c64bea44dac040ed3731ec9d75275b9e831fe5" "d89e15a34261019eec9072575d8a924185c27d3da64899905f8548cbd9491a36" "de1bf2ed5e8ff97ce2d8f277f1d022a8a9141d5c7afe5248c5df077f30168a1b" default))
  '(fci-rule-color "#01323d")
@@ -44,6 +44,7 @@
  '(js-indent-level 2)
  '(js-jsx-indent-level 2)
  '(lsp-ui-doc-border "#9eacac")
+ '(mac-text-scale-standard-width 120)
  '(nrepl-message-colors
    '("#ec423a" "#db5823" "#c49619" "#687f00" "#c3d255" "#0069b0" "#3cafa5" "#e2468f" "#7a7ed2"))
  '(org-adapt-indentation t)
